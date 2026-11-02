@@ -1,0 +1,89 @@
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 15pt;
+}
+
+body {
+    margin: 10%;
+}
+
+h1 {
+    color: black;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    text-indent: -1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 60px;
+
+}
+h2 {
+    color: black;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    text-indent: -1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+}
+
+h3 {
+    color: grey;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    text-indent: -1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+}
+
+h4 {
+color: gray;
+    letter-spacing: -0.02em;
+
+    text-indent: -1rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+
+}
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.letter-spacing {
+    letter-spacing: .3em;
+}
+
+.letter-spacing-more {
+    letter-spacing: -.06em;
+}
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+section {
+    margin: 2.5em 0;
+    
+}
+
+
