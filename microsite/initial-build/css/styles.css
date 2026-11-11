@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f1f4ea;
+    color: #2f2a22;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+header, main {
+    max-width: 950px;
+    margin: auto;
+    padding: 15px;
+}
+
+.site-title {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 7px 14px;
+    border: 2px solid #2f2a22;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px #2f2a22;
+    transition: transform .2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    transform: translateY(-3px);
+}
+
+nav li:nth-child(1) a {
+    background: #c4527a;
+}
+
+nav li:nth-child(2) a {
+    background: #a8651f;
+}
+
+nav li:nth-child(3) a {
+    background: #3f7a4c;
+}
+
+nav li:nth-child(4) a {
+    background: #7a5a3a;
+}
+
+nav li:nth-child(5) a {
+    background: #34788d;
+}
+
+nav li:nth-child(6) a {
+    background: #85569f;
+}
+
+nav li:nth-child(7) a {
+    background: #5f6f2e;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 35px;
+}
+
+p {
+    max-width: 650px;
+}
+
+.lede {
+    font-size: 21px;
+    font-style: italic;
+}
+
+main > section {
+    display: none;
+}
+
+main > #home,
+main > section:target {
+    display: block;
+}
+
+main > section:target ~ #home {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+
+.row > div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.row .frame {
+    flex: 1;
+    min-width: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.gallery .frame {
+    flex: 1;
+    min-width: 200px;
+}
+
+.frame {
+    margin: 0;
+    padding: 15px;
+    border: 3px solid #2f2a22;
+    border-radius: 8px;
+    background: #fcfdf8;
+    box-shadow: 5px 5px #c4527a;
+}
+
+.frame figcaption {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.worm {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    color: #c4527a;
+}
+
+.strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.strip .worm {
+    width: 110px;
+}
+
+.strip .worm:nth-child(2) {
+    color: #55703c;
+}
+
+.strip .worm:nth-child(3) {
+    color: #3f7f93;
+}
+
+.strip .worm:nth-child(4) {
+    color: #b8742a;
+}
+
+.strip .worm:nth-child(5) {
+    color: #b3c53a;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 20px;
+    background: #c4527a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #2f2a22;
+    border-radius: 25px;
+    box-shadow: 0 4px #2f2a22;
+}
+
+.btn:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px #2f2a22;
+}
+
+.hint {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.doors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.doors li {
+    flex: 1;
+    min-width: 180px;
+}
+
+.win {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border: 3px solid #2f2a22;
+    border-radius: 80px 80px 5px 5px;
+    background: #fcfdf8;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.fact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.chips li {
+    padding: 5px 15px;
+    border: 2px solid #2f2a22;
+    border-radius: 20px;
+    background: white;
+}
+
+.ground {
+    height: 25px;
+    background: #e2d6bb;
+    margin-top: 35px;
+}
+
+footer {
+    background: #e2d6bb;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+footer p {
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    nav a {
+        padding: 5px 9px;
+        font-size: 12px;
+    }
+
+    .row, .gallery {
+        display: block;
+    }
+
+    .frame {
+        margin: 15px 0;
+    }
+
+    .doors li {
+        min-width: 130px;
+    }
+
+}
+
+a:focus-visible,
+.win:focus-within {
+    outline: 3px solid #2f2a22;
+    outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav a,
+    .door {
+        transition: none;
+    }
+}
+
+.site-title {
+    font-weight: bold;
+}
+
+header {
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: clamp(36px, 5vw, 64px);
+}
+
+.home-intro p {
+    max-width: 740px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.btn {
+    border-radius: 32px 0 32px 0;
+    box-shadow: 4px 4px #2f2a22;
+}
+
+.btn-secondary {
+    background: #fcfdf8;
+    color: #2f2a22;
+}
+
+.discovery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 24px 20px;
+    margin: 28px 0 65px;
+}
+
+.discovery-grid .frame {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+}
+
+.discovery-grid .worm {
+    filter: drop-shadow(0 7px 0 #d5dacb);
+}
+
+.discovery-grid .frame:nth-child(1) .worm {
+    color: #508957;
+    transform: rotate(-3deg);
+}
+
+.discovery-grid .frame:nth-child(3) .worm {
+    color: #3f7f93;
+    transform: rotate(3deg);
+}
+
+.discovery-grid .frame:nth-child(5) .worm {
+    color: #b8742a;
+    transform: rotate(-3deg);
+}
+
+.win {
+    width: 170px;
+    height: 218px;
+    padding: 0;
+    border-radius: 90px 90px 0 0;
+    border: 3px solid #2f2a22;
+    background: #e2d6bb;
+    color: #2f2a22;
+    box-shadow: 4px 5px 0 #c9c0a9;
+}
+
+.doors .win {
+    display: block;
+    margin: auto;
+}
+
+.door {
+    position: absolute;
+    inset: 0;
+    border-radius: 85px 85px 0 0;
+    border: 2px solid #84314f;
+    background: repeating-linear-gradient(90deg, #c4527a 0, #c4527a 12px, #9e3c60 12px, #9e3c60 14px);
+    transform-origin: left center;
+    transition: transform .4s;
+    box-shadow: inset 5px 0 0 #ffffff26;
+}
+
+.door::before,
+.door::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 8px;
+    border: 1px solid #fcfdf8;
+    background: #2f2a22;
+}
+
+.door::before {
+    top: 35%;
+}
+
+.door::after {
+    top: 78%;
+}
+
+.door-knob {
+    position: absolute;
+    right: 15px;
+    top: 60%;
+    width: 22px;
+    height: 22px;
+    border: 4px solid #fcfdf8;
+    border-radius: 50%;
+    background: #2f2a22;
+    box-shadow: 0 0 0 2px #2f2a22;
+}
+
+.win:hover .door,
+.win:focus-within .door,
+.door-toggle:checked ~ .door {
+    transform: translateX(-102%);
+}
+
+body:has(#home:target) nav a[href="#home"],
+body:not(:has(main > section:target)) nav a[href="#home"],
+body:has(#origins:target) nav a[href="#origins"],
+body:has(#anatomy:target) nav a[href="#anatomy"],
+body:has(#habitat:target) nav a[href="#habitat"],
+body:has(#feeding:target) nav a[href="#feeding"],
+body:has(#conservation:target) nav a[href="#conservation"],
+body:has(#sources:target) nav a[href="#sources"] {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+    .discovery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 12px;
+    }
+
+    .win {
+        width: min(170px, 100%);
+    }
+
+    .discovery-grid .frame {
+        margin: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .door {
+        transition: none;
+    }
+}
+
+.discovery-grid {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 0;
+}
+
+.worm {
+    aspect-ratio: 7 / 3;
+}
+
+.discovery-grid .frame {
+    width: 100%;
+}
+
+.discovery-grid .worm {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.win {
+    display: block;
+    isolation: isolate;
+    flex-shrink: 0;
+}
+
+.door {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.fact {
+    z-index: 1;
+    text-align: center;
+    line-height: 1.45;
+}
+
+.door-toggle {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
